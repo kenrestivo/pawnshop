@@ -1,7 +1,7 @@
 (ns pawnshop.core
   (:require [clj-http.client :as client]
             [clojure.walk :as walk])
-  (:use 'cheshire.core))
+  (:use cheshire.core))
 
 
 
