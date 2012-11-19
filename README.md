@@ -4,7 +4,16 @@ A thin wrapper around Bitcoind's JSON API.
 
 ## Usage
 
-Add [pawnshop "0.1.0-SNAPSHOT"] to your project.clj. Then:
+Add
+
+```clojure
+
+[pawnshop "0.1.0-SNAPSHOT"]
+
+```
+
+to your project.clj. Then:
+
 
 ```clojure
 
@@ -25,6 +34,14 @@ Add [pawnshop "0.1.0-SNAPSHOT"] to your project.clj. Then:
     (longify-amounts))
 
 ```
+
+You can access anything in the [Bitcoind API]:  https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
+
+Just keywordize or quote the function name, and give it as the second argument to the bitcoin proxy function, and any arguments it requires afterwards.
+
+## TO DO
+
+
 
 ## License
 
