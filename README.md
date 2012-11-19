@@ -1,6 +1,6 @@
 # pawnshop
 
-A Clojure library designed to ... well, that part is up to you.
+A thin wrapper around Bitcoind's JSON API.
 
 ## Usage
 
