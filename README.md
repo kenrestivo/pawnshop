@@ -23,7 +23,7 @@ to your project.clj. Then:
 
 ```
 
-You can access anything in the [Bitcoind API]:  https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
+You can access anything in the [Bitcoind API](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list)
 
 Just keywordize or quote the function name, and give it as the second argument to the bitcoin proxy function, and any arguments it requires afterwards.
 
