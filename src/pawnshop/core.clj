@@ -50,6 +50,11 @@
   [value]
   (/ value 1e8))
 
+(defn all-addresses
+  "Takes proxy, returns all the addresses on all accounts"
+  [btp]
+  (mapcat  #(btp :getaddressesbyaccount (key %))
+           (-> (btp :listaccounts) clojure.walk/stringify-keys)))
 
 
 (defn address-summaries
