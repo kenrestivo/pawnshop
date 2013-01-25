@@ -37,11 +37,12 @@ Just keywordize or quote the function name, and give it as the second argument t
 
 ```
 
-There are also some convenience functions in the works:
+There are also some convenience functions in the works. This one performs the operations on every address in the account:
+
 
 ```clojure
 
-(address-summarize bitcoin "test account" [:getreceivedbyaddress :dumpprivkey])
+(address-summaries bitcoin "test account" [:getreceivedbyaddress :dumpprivkey])
 
 ```
 

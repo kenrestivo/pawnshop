@@ -33,7 +33,7 @@
 
 
 
-(defn longify-amounts
+ (defn longify-amounts
   "Required for conversion of JSON values to valid 64-bit longs which
    bitcoin amounts must be stored in.
    From the documentation https://en.bitcoin.it/wiki/Proper_Money_Handling_%28JSON-RPC%29
