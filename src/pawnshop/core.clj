@@ -14,6 +14,7 @@
                                    :method  method,
                                    :params params })
                     :accept :json
+                    :throw-exceptions false
                     :basic-auth [(name user) (name password)]})
       :body
       (decode keyword)))
@@ -26,7 +27,7 @@
   [url user password]
   (fn [method & params]
     (let [resp (get-response url user password method params)]
-      (if (-> resp :error nil?)
+      (if (-> resp :error empty?)
         (:result resp)
         (throw (Exception. (-> resp :error :message)))))))
 
