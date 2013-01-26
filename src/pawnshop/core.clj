@@ -69,4 +69,15 @@
                      (bitcoin f address))))))
 
 
+(defn multi-proxies
+  "Applies the args to several proxies. Returns nil for exceptions."
+  [peers & args]
+  (for [p peers]
+    (try
+      (apply p args)
+      (catch Exception e (.getMessage e)))))
+
+
+(defn get-last-block [f]
+  (f :getblockhash (f :getblockcount)))
 
